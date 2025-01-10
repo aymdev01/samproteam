@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فريق سام برو</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar-brand img {
+            max-height: 50px;
+        }
+        .welcome-section {
+            background: linear-gradient(135deg, #007bff, #00bfff);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .welcome-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .welcome-section p {
+            font-size: 1.2rem;
+        }
+        .about-section, .projects-section, .team-section, .contact-section {
+            padding: 60px 0;
+        }
+        .team-member {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .team-member h3 {
+            color: #007bff;
+            font-weight: 700;
+        }
+        .team-member p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .social-icons a {
+            color: #007bff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- القسم الرئيسي -->
+    <header class="welcome-section">
+        <div class="container">
+            <img src="logo.png" alt="شعار سام برو" class="mb-4">
+            <h1>مرحبًا بكم في فريق سام برو</h1>
+            <p>نحن متخصصون في تطوير التطبيقات والمواقع الحديثة.</p>
+        </div>
+    </header>
+
+    <!-- نبذة تعريفية -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="text-center mb-4">من نحن</h2>
+            <p class="text-center">
+                فريق سام برو هو فريق محترف في مجال تطوير التطبيقات والمواقع الإلكترونية. نقدم حلولًا تقنية مبتكرة تلبي احتياجات عملائنا بأعلى معايير الجودة.
+            </p>
+        </div>
+    </section>
+
+    <!-- مشاريع الفريق -->
+    <section class="projects-section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">مشاريعنا</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img src="project1.jpg" class="card-img-top" alt="مشروع 1">
+                        <div class="card-body">
+                            <h5 class="card-title">  تطبيق المحاسب المالي</h5>
+                            <p class="card-text">تطبيق يساعد على تنظيم حساباتك المالية  بسهولة.</p>
+                            <a href="#" class="btn btn-primary">عرض التطبيق</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img src="project2.jpg" class="card-img-top" alt="مشروع 2">
+                        <div class="card-body">
+                            <h5 class="card-title">تطبيق زوامل سام</h5>
+                            <p class="card-text">تطبيق يحتوي على مئات الزوامل والمحاضرات والبث المباشر للقنوات.</p>
+                            <a href="#" class="btn btn-primary">عرض التطبيق</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <img src="p1.jpg" class="card-img-top" alt="مشروع 3">
+                        <div class="card-body">
+                            <h5 class="card-title">منصة تعليمية</h5>
+                            <p class="card-text">منصة تعليمية تفاعلية للدورات التدريبية.</p>
+                            <a href="#" class="btn btn-primary">عرض المشروع</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- فريق العمل -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="text-center mb-4">فريق العمل</h2>
+            <div class="row">
+                <!-- المطور 1: محمد الهلاني -->
+                <div class="col-md-4">
+                    <div class="team-member text-center">
+                        <img src="mohamed.jpg" alt="محمد الهلاني">
+                        <h3>محمد الهلاني</h3>
+                        <p>مطور ويب محترف بخبرة تزيد عن 5 سنوات في تطوير المواقع والتطبيقات. متخصص في تقنيات مثل HTML, CSS, JavaScript, وReact.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- المطور 2: أيمن أحمد -->
+                <div class="col-md-4">
+                    <div class="team-member text-center">
+                        <img src="1.jpg" alt="أيمن أحمد">
+                        <h3>أيمن أحمد</h3>
+                        <p>مطور تطبيقات Android بخبرة واسعة في تطوير تطبيقات الهواتف الذكية باستخدام Java وKotlin. لديه مشاريع ناجحة في مجال التجارة الإلكترونية.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- المطور 3: عبدالملك مهدي -->
+                <div class="col-md-4">
+                    <div class="team-member text-center">
+                        <img src="abdulmalik.jpg" alt="عبدالملك مهدي">
+                        <h3>عبدالملك مهدي</h3>
+                        <p>متخصص في الدعاية والإعلان، لديه خبرة في إدارة الحملات الإعلانية على منصات التواصل الاجتماعي وإنشاء المحتوى التسويقي.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+    <div class="team-member text-center">
+        <img src="1.jpg" alt="سارة علي">
+        <h3>سارة علي</h3>
+        <p>متخصصة في تصميم واجهات المستخدم (UI/UX) وتجربة المستخدم، لديها خبرة في استخدام أدوات مثل Figma وAdobe XD.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تواصل معنا -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-4">تواصل معنا</h2>
+            <div class="text-center">
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 فريق سام برو. جميع الحقوق محفوظة.</p>
+            <p>
+                <a href="seash.html">سياسة الخصوصية</a> | 
+                <a href="sh.html">الشروط والأحكام</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
