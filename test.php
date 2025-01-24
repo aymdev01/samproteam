@@ -5,7 +5,7 @@ if (isset($_GET['id2'])) {
     $id2 = $_GET['id2'];
 
     // رابط JSON
-    $url = "https://opensheet.elk.sh/1PttLvD6duqEDSGUGpkvMKHUdAK77BekehOVFK56J1lI/1";
+    $url = "the url";
 
     // جلب محتوى JSON
     $json_data = file_get_contents($url);
